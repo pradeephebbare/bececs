@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formsubmit.co; frame-src 'self' https://www.google.com; object-src 'self'; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0e3445">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <title>ECS Events</title>
+
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="refined.css">
+  <link rel="stylesheet" href="enhance.css">
+</head>
+
+<body>
+<a class="skip-link" href="#events">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" aria-label="Primary">
+  <div class="nav-container">
+    <a class="nav-brand" href="index.html" aria-label="ECS Department home">
+      <div class="nav-logo"><img src="images/logo.jpeg" class="dept-logo" alt="BEC emblem"></div>
+      <div class="nav-title"><span class="nav-dept">Electronics &amp; Computer Engineering</span><span class="nav-univ">Basaveshwar Engineering College · Bagalkote</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="labs.html">Laboratories</a></li>
+      <li><a href="toppers.html">Toppers</a></li>
+      <li><a href="sdp-events.html" aria-current="page">SDP Events</a></li>
+      <li><a href="otech-events.html">OTECH Events</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ===== EVENTS SECTION ===== -->
+<section class="events section" id="events">
+  <div class="container">
+    
+    <div class="section-header">
+      <h2 class="section-title">Events & <span>Activities</span></h2>
+      <p class="section-sub">Workshops, seminars, fests, and more</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="events-tabs">
+      <button class="evt-tab active" data-tab="upcoming">SDP-Events</button>
+      <button class="evt-tab" data-tab="past">OTECH-Events</button>
+    </div>
+
+    <!-- SDP EVENTS -->
+    <div class="events-grid" id="upcomingEvents">
+
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="sdp_events/event1.jpg" class="event-img" alt="Students at a department development programme" loading="lazy"/>
+          <span class="event-badge past-badge">SDP</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> June 11, 2025</div>
+          <h3>Quantitative Aptitude and Soft Skills</h3>
+          <p>A five-day programme on analytical, problem-solving and communication skills, organised with the MCA department and IQAC.</p>
+          <button type="button" data-gallery="gallery1" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="sdp_events/event2.jpg" class="event-img" alt="Students participating in an advanced C programming programme" loading="lazy"/>
+          <span class="event-badge past-badge">SDP</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> September 20, 2025</div>
+          <h3>Advanced C Programming</h3>
+          <p>A five-day student development programme designed to strengthen programming and problem-solving skills through practical learning.</p>
+          <button type="button" data-gallery="gallery2" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+       <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="sdp_events/event3.jpeg" class="event-img" alt="WISE session poster: Building Yourself to Be a Successful Engineer, November 14, 2025" loading="lazy"/>
+          <span class="event-badge past-badge">SDP</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> November 14, 2025</div>
+          <h3>Building Yourself to Be a Successful Engineer</h3>
+          <p>WISE session at Basaveshwar Engineering College, Bagalkot.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OTECH EVENTS -->
+    <div class="events-grid hidden" id="pastEvents">
+
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="past_events_gallery/otech1.jpg" class="event-img"/>
+          <span class="event-badge past-badge">OTECH</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> May 14, 2025</div>
+          <h3>AADI 2024 – Freshers Celebration</h3>
+          <p>AADI 2024 marked a memorable beginning for the department, where students organized and celebrated their freshers’ event. It showcased creativity, teamwork, and enthusiasm through engaging activities and performances. The event created a welcoming atmosphere, encouraged interaction, and reflected unity among students, setting a positive tone for their academic journey ahead.</p>
+          <button type="button" data-gallery="gallery4" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="past_events_gallery/otech4.jpg" class="event-img"/>
+          <span class="event-badge past-badge">OTECH</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> December 26, 2024</div>
+          <h3>Showcase of Talents</h3>
+          <p>The event, held on 26th December 2024 by the OTech Association, marked its first non-technical initiative. It featured a talent showcase and a four-stage team competition involving eight teams from various departments, promoting creativity, teamwork, and active participation. The event was successfully conducted with enthusiastic involvement, setting a strong foundation for future activities.</p>
+          <button type="button" data-gallery="gallery5" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="past_events/event3.jpg" class="event-img"/>
+          <span class="event-badge past-badge">OTECH</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> May 14, 2025</div>
+          <h3>Tech Rung</h3>
+          <p>The event “Tech Rang”, organized by the Department of Electronics and Computer Engineering under O-TEC at Basaveshwar Engineering College, Bagalkot, blended creativity with technology. Nine teams participated, creating rangoli designs based on technological themes. The event showcased innovation, artistic skills, and enthusiasm, and was successfully conducted, offering a memorable experience for all.</p>
+          <button type="button" data-gallery="gallery6" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="past_events/event4.jpg" class="event-img"/>
+          <span class="event-badge past-badge">OTECH</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> November 05, 2025</div>
+          <h3>Visual Alchemy</h3>
+          <p>The event “Visual Alchemy”, organized by the Department of Electronics and Computer Engineering at Basaveshwar Engineering College, Bagalkot, promoted creativity through collage-making. With 25 participants, the event showcased innovation, teamwork, and artistic skills. Students presented unique compositions, and winners received cash prizes. The event was successfully conducted, offering an engaging experience for all</p>
+          <button type="button" data-gallery="gallery7" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="past_events/event5.jpeg" class="event-img"/>
+          <span class="event-badge past-badge">OTECH</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> November 05, 2025</div>
+          <h3>VISTARA-2025: Welcoming the New Batch</h3>
+          <p>The Department of Electronics and Computer Engineering organized VISTARA-2025, a week-long welcome program from 1–6 December featuring themes: Recreate Your School Days, Astro Vault, Jersey Jumbo, Denim Dynasty, and Cultural Heritage. The celebrations concluded with Fresher’s Day, including introductions, motivational sessions, and future plans, encouraging academic excellence and student development.</p>
+          <button type="button" data-gallery="gallery8" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+      
+      <div class="event-card">
+        <div class="event-img-wrap">
+          <img src="past_events/event6.jpeg" class="event-img"/>
+          <span class="event-badge past-badge">OTECH</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date"><i class="fas fa-calendar"></i> November 05, 2025</div>
+          <h3>Flame Free Feast</h3>
+          <p>The Flame Free Feast event, organized by the Department of Electronics and Computer Engineering, encourages students to prepare creative dishes without using fire or electrical appliances. Conducted on International Women’s Day, teams of 2–3 participants will showcase innovation, hygiene, and presentation skills, promoting teamwork, healthy cooking practices, and sustainability among students.</p>
+          <button type="button" data-gallery="gallery9" class="btn-gallery" aria-haspopup="dialog">View Gallery</button>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="eventModal" data-close-modal role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" type="button" data-close-modal aria-label="Close gallery">&times;</button>
+    <h3 class="modal-title" id="modalTitle"></h3>
+    <div class="modal-gallery" id="modalGallery"></div>
+  </div>
+</div>
+<script src="script.js" defer></script>
+<script src="motion.js" defer></script>
+<script src="scene3d.js" defer></script>
+<script src="enhance.js" defer></script>
+</body>
+</html>

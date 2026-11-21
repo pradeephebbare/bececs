@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formsubmit.co; frame-src 'self' https://www.google.com; object-src 'self'; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0e3445">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <title>ECS Labs</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="refined.css">
+  <link rel="stylesheet" href="enhance.css">
+</head>
+
+<body>
+<a class="skip-link" href="#labs">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" aria-label="Primary">
+  <div class="nav-container">
+    <a class="nav-brand" href="index.html" aria-label="ECS Department home">
+      <div class="nav-logo"><img src="images/logo.jpeg" class="dept-logo" alt="BEC emblem"></div>
+      <div class="nav-title"><span class="nav-dept">Electronics &amp; Computer Engineering</span><span class="nav-univ">Basaveshwar Engineering College · Bagalkote</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="labs.html" aria-current="page">Laboratories</a></li>
+      <li><a href="toppers.html">Toppers</a></li>
+      <li><a href="sdp-events.html">SDP Events</a></li>
+      <li><a href="otech-events.html">OTECH Events</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- LAB SECTION -->
+<section class="section section-offset" id="labs">
+  <div class="container">
+
+    <div class="section-header"><h1 class="section-title">Our <span>Laboratories</span></h1><p class="section-sub">Spaces for experimentation, practice and project work</p></div>
+
+    <!-- LAB 1 -->
+    <div class="lab-card">
+      <img src="Lab images/DSA.jpg" class="lab-img" alt="Students working in a computer laboratory" loading="lazy">
+      <div>
+        <h3>DSA Lab — Data Structures & Algorithms</h3>
+        <p>The DSA Lab provides students with a practical environment to develop programming and problem-solving skills. Students learn to implement and analyze important data structures and algorithms and understand their applications in solving computational problems.</p>
+        <p> <strong>Learning Outcome:</strong> Students develop efficient programming techniques, logical thinking, and the ability to design optimized solutions for real-world problems.</p>
+      </div>
+    </div>
+
+    <!-- LAB 2 -->
+    <div class="lab-card">
+      <img src="Lab images/MICRO.jpg" class="lab-img" alt="Microcontroller and IoT laboratory equipment" loading="lazy">
+      <div>
+        <h3>IoT Lab</h3>
+        <p>Provides hands-on experience with sensors, microcontrollers, and cloud integration for real-time IoT applications.</p>
+      </div>
+    </div>
+
+    <!-- LAB 3 -->
+    <div class="lab-card">
+      <img src="Lab images/LIC.jpg" class="lab-img" alt="Computing laboratory at the department" loading="lazy">
+      <div>
+        <h3>Computer Lab</h3>
+        <p>Well-equipped with modern systems and software tools to support programming, simulation, and project development.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js" defer></script>
+<script src="motion.js" defer></script>
+<script src="scene3d.js" defer></script>
+<script src="enhance.js" defer></script>
+</body>
+</html>
