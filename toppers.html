@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formsubmit.co; frame-src 'self' https://www.google.com; object-src 'self'; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0e3445">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <title>Semester Toppers | ECS Department, BEC Bagalkote</title>
+  <meta name="description" content="Semester-wise toppers of the Electronics and Computer Engineering department, batches 2024–25 and 2025–26.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="refined.css">
+  <link rel="stylesheet" href="enhance.css">
+  <link rel="stylesheet" href="toppers.css">
+</head>
+
+<body class="toppers-page">
+<a class="skip-link" href="#toppers">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" aria-label="Primary">
+  <div class="nav-container">
+    <a class="nav-brand" href="index.html" aria-label="ECS Department home">
+      <div class="nav-logo"><img src="images/logo.jpeg" class="dept-logo" alt="BEC emblem"></div>
+      <div class="nav-title"><span class="nav-dept">Electronics &amp; Computer Engineering</span><span class="nav-univ">Basaveshwar Engineering College · Bagalkote</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="labs.html">Laboratories</a></li>
+      <li><a href="toppers.html" aria-current="page">Toppers</a></li>
+      <li><a href="sdp-events.html">SDP Events</a></li>
+      <li><a href="otech-events.html">OTECH Events</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="tp-hero">
+  <div class="container">
+    <a class="tp-back" href="index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to department homepage</a>
+    <h1>Semester <span>Toppers</span></h1>
+    <p class="tp-lead">Top performers of every semester, arranged by batch. Entries within each semester are listed in rank order.</p>
+
+    <div class="tp-notice" id="sampleNotice" role="note" aria-labelledby="sampleNoticeTitle">
+      <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+      
+
+    <nav aria-label="Jump to batch">
+      <ul class="tp-jump" id="batchJump">
+       
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="toppers" class="tp-main" tabindex="-1">
+  <div class="container">
+    <div id="toppersRoot"></div>
+    <noscript><p class="tp-nojs">JavaScript is needed to display the toppers list. Please enable it or contact the department.</p></noscript>
+    <p class="tp-foot"><a class="btn btn-outline" href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Back to department homepage</a></p>
+  </div>
+</main>
+
+<script src="toppers-data.js" defer></script>
+<script src="toppers.js" defer></script>
+<script src="script.js" defer></script>
+<script src="motion.js" defer></script>
+<script src="scene3d.js" defer></script>
+<script src="enhance.js" defer></script>
+</body>
+</html>

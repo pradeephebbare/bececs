@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formsubmit.co; frame-src 'self' https://www.google.com; object-src 'self'; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0e3445">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Read monthly publications from the Electronics and Computer Engineering Department at BEC Bagalkote.">
+  <title>Department Magazine | ECS · BEC Bagalkote</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="magazine.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="refined.css">
+  <link rel="stylesheet" href="enhance.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+  <header class="mag-header">
+    <a class="nav-brand" href="index.html" aria-label="Electronics and Computer Engineering department home">
+      <span class="nav-logo"><img src="images/logo.jpeg" alt="BEC emblem"></span>
+      <span><span class="nav-dept">Electronics &amp; Computer Engineering</span><span class="nav-univ">Basaveshwar Engineering College · Bagalkote</span></span>
+    </a>
+    <a href="index.html">&larr; Back to department</a>
+  </header>
+
+  <main class="magazine-page" id="main">
+    <header class="magazine-heading">
+      <p class="magazine-eyebrow">Department publication</p>
+      <h1>Monthly Magazine</h1>
+      <p>Choose an issue to read it here or download a copy.</p>
+    </header>
+
+    <section class="magazine-panel" aria-label="Magazine viewer">
+      <div class="magazine-controls">
+        <div class="magazine-select-group">
+          <label for="monthSelect">Select an issue</label>
+          <select id="monthSelect" aria-label="Select magazine issue">
+            <option value="">Choose a month</option>
+            <option value="magazines/October-2025.pdf">October 2025</option>
+            <option value="magazines/November-2025.pdf">November 2025</option>
+            <option value="magazines/December-2025.pdf">December 2025</option>
+            <option value="magazines/January-2026.pdf">January 2026</option>
+            <option value="magazines/February-2026.pdf">February 2026</option>
+            <option value="magazines/March-2026.pdf">March 2026</option>
+            <option value="magazines/April-2026.pdf">April 2026</option>
+            <option value="magazines/May-2026.pdf">May 2026</option>
+            <option value="magazines/August_2026.pdf">August 2026</option>
+          </select>
+        </div>
+        <a id="downloadLink" class="magazine-download" href="magazines/August_2026.pdf" download hidden>
+          <i class="fa-solid fa-download" aria-hidden="true"></i>
+          Download PDF
+        </a>
+      </div>
+
+      <div id="emptyState" class="magazine-empty" aria-live="polite">
+        <span class="magazine-book-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>
+        <h2>Choose an issue to begin</h2>
+        <p>The magazine will appear below with your browser’s PDF controls.</p>
+      </div>
+
+      <div id="viewerContainer" class="magazine-document" hidden>
+        <iframe id="magazineFrame" title="Department monthly magazine PDF" src="about:blank" loading="lazy"></iframe>
+      </div>
+    </section>
+    <p class="magazine-note">Use the PDF toolbar to navigate pages, zoom, or print.</p>
+  </main>
+
+  <script src="magazine.js" defer></script>
+  <script src="enhance.js" defer></script>
+</body>
+</html>
