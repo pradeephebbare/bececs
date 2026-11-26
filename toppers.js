@@ -21,16 +21,22 @@
     var img = document.createElement('img');
     img.src = s.photo; img.alt = s.alt || ('Photo of ' + s.name);
     img.width = 240; img.height = 240; img.loading = 'lazy'; img.decoding = 'async';
+    img.addEventListener('error', function () {
+      if (img.dataset.fallback) return;
+      img.dataset.fallback = 'true';
+      img.src = 'images/topper-demo.svg';
+      img.alt = 'Photo unavailable for ' + s.name;
+    });
     photo.append(img);
     if (s.sample) photo.append(el('span', 'tp-tag', 'Sample photo'));
 
     var body = el('div', 'tp-body');
     body.append(el('span', 'tp-rank', 'Rank ' + s.rank));
-    var h = el('h5', 'tp-name', s.name);
+    var h = el('h5', 'tp-name', s.placeholder ? 'Name to be added' : s.name);
     body.append(h);
     var dl = el('dl', 'tp-facts');
-    var a = el('div'); a.append(el('dt', null, 'USN'), el('dd', 'tp-usn', s.usn));
-    var b = el('div'); b.append(el('dt', null, 'SGPA'), el('dd', 'tp-sgpa', s.sgpa));
+    var a = el('div'); a.append(el('dt', null, 'USN'), el('dd', 'tp-usn', s.placeholder ? '\u2014' : s.usn));
+    var b = el('div'); b.append(el('dt', null, 'SGPA'), el('dd', 'tp-sgpa', s.placeholder ? '\u2014' : s.sgpa));
     dl.append(a, b);
     body.append(dl);
     if (s.sample) body.append(el('p', 'tp-sample-line', 'Sample details'));
